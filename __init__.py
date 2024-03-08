@@ -5,6 +5,8 @@ from vertexai.language_models import TextGenerationModel
 from vertexai.language_models import CodeGenerationModel
 
 #must replace hashtags with project names
+#To run >>>>>
+# flask --app CodeReviewer run --debug -p 8080
 
 def create_app(test_config=None):
     # create and configure the app
