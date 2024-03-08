@@ -1,0 +1,332 @@
+
+
+.accordian {
+    max-width: 100px;
+}
+
+/* Customize CodeMirror container */
+/* Customize CodeMirror container */
+.CodeMirror {
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Customize CodeMirror text area */
+  .CodeMirror textarea {
+    font-family: monospace;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9; /* Background color similar to Python IDEs */
+    color: #000; /* Text color */
+  }
+  
+  /* Customize CodeMirror line numbers */
+  .CodeMirror-gutters {
+    background-color: #f0f0f0;
+  }
+  
+  /* Customize CodeMirror cursor */
+  .CodeMirror-cursor {
+    border-left: 2px solid #000;
+  }
+  
+  /* Customize CodeMirror selection */
+  .CodeMirror-selected {
+    background-color: #e0e0e0;
+  }
+  
+  /* Customize CodeMirror scrollbar */
+  .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+    background-color: #f0f0f0;
+  }
+  
+  /* Customize CodeMirror syntax highlighting for Python */
+  .cm-s-default .cm-keyword {
+    color: #0000ff; /* Python keyword color (blue) */
+  }
+  
+  .cm-s-default .cm-atom {
+    color: #008000; /* Python atom color (green) */
+  }
+  
+  .cm-s-default .cm-builtin {
+    color: #b00040; /* Python built-in color (dark red) */
+  }
+  
+  .cm-s-default .cm-string {
+    color: #008000; /* Python string color (green) */
+  }
+  
+  .cm-s-default .cm-number {
+    color: #0000ff; /* Python number color (blue) */
+  }
+  
+  .cm-s-default .cm-def {
+    color: #000; /* Python function definition color (black) */
+  }
+  
+  .cm-s-default .cm-variable {
+    color: #000; /* Python variable color (black) */
+  }
+
+  textarea {
+    width: 70%;
+    height: 500px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #444; /* Dark border for dark theme */
+    border-radius: 4px;
+    background-color: #333; /* Dark background */
+    color: #ccc; /* Light font color for contrast */
+    resize: vertical;
+    font-size: 16px;
+  }
+  
+  textarea:focus {
+    border-color: #556; /* Darker border on focus */
+    background-color: #444; /* Slightly lighter background on focus */
+    color: #fff; /* Bright white font color on focus for better readability */
+  }
+
+  /* Global form styling */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #121212; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Futuristic glow */
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0af; /* Bright cyan for a futuristic feel */
+  font-size: 18px;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: calc(100% - 24px); /* Full width with padding correction */
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #222; /* Slightly lighter dark background for the input */
+  color: #0af; /* Text color */
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0af; /* Highlight with cyan border on focus */
+  background-color: #333; /* Darker background on focus */
+}
+
+/* Button styling */
+.button_sub {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(45deg, #006, #00c); /* Gradient for a cool, futuristic look */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-image 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button_sub:hover {
+  background-image: linear-gradient(45deg, #00c, #0af); /* Shift in gradient on hover */
+}
+
+header {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Vibrant gradient background */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 70%);
+  z-index: 1;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  z-index: 2;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean, modern font */
+  font-size: 48px; /* Increased font size for more impact */
+  font-weight: 300; /* Lighter font weight for a sleek look */
+  color: #222; /* Slightly darker color for more contrast */
+  margin-top: 30px; /* Increased top margin for more space */
+  margin-bottom: 30px; /* Increased bottom margin for more space */
+  text-align: center; /* Center alignment for a balanced appearance */
+  letter-spacing: -1.5px; /* Enhanced letter spacing for elegance */
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-bottom: 2px solid #ddd; /* Subtle bottom border for definition */
+  padding-bottom: 10px; /* Padding below the text, above the border */
+  display: inline-block; /* Allows the border to wrap the text more tightly */
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background for contrast */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  padding: 10px 20px; /* Padding around the text for separation from background */
+}
+
+
+
+header h2 {
+  font-size: 0.8 rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00dbde, 0 0 20px #00dbde, 0 0 30px #fc00ff, 0 0 40px #fc00ff, 0 0 50px #fc00ff, 0 0 60px #fc00ff, 0 0 70px #fc00ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00dbde, 0 0 30px #fc00ff, 0 0 40px #fc00ff, 0 0 50px #fc00ff, 0 0 60px #fc00ff, 0 0 70px #fc00ff, 0 0 80px #fc00ff;
+  }
+}
+
+header:hover::before {
+  opacity: 1;
+}
+
+.accordion-item {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for each accordion item */
+}
+
+.accordion-header {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Same vibrant gradient background */
+}
+
+.accordion-button {
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1); /* Make the accordion icon white */
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fc00ff;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1); /* Keep the icon white when expanded */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Remove default focus outline */
+}
+
+.accordion-body {
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05); /* Slightly lighter background for the body */
+  color: #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Add a glow effect to the accordion header on hover/focus */
+.accordion-header:hover .accordion-button, .accordion-header .accordion-button:focus {
+  color: #00dbde;
+  text-shadow: 0 0 5px #00dbde, 0 0 15px #fc00ff;
+}
+
+/* Animation for the accordion collapse action */
+.accordion-collapse.collapse {
+  transition: height 0.4s ease-out;
+}
+
+.spinner {
+  border: 6px solid rgba(255, 255, 255, 0.2); /* Light grey border */
+  border-top: 6px solid #3498db; /* Blue border */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.code-container {
+  display: flex; /* Use Flexbox for laying out the textareas side by side */
+  gap: 20px; /* Space between the textareas */
+}
+
+.code-block {
+  font-family: 'Courier New', monospace; /* Monospace font for code-like appearance */
+  font-size: 14px;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark text color */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside the textareas */
+  width: 100%; /* Full width to expand inside the container */
+  box-sizing: border-box; /* Box sizing to include padding and border in the width */
+  resize: vertical; /* Allow only vertical resizing */
+  overflow: auto; /* Auto-scroll for overflow */
+  min-height: 200px; /* Minimum height */
+  tab-size: 4; /* Set tab size */
+}
+
+/* Optional: Additional styles for highlighting Python syntax can be achieved through JavaScript-based syntax highlighting libraries like Prism.js or Highlight.js */
+
+
+
+  
+  
